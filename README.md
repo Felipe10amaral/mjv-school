@@ -1,5 +1,5 @@
 
-## JAVA-SCHOOL - MJV <img src="assets/mj.jpeg"  width="30" height="30">
+## JAVA-SCHOOL - MJV <img src="assets/mj.jpeg"  width="50" height="50">
 
 
 
