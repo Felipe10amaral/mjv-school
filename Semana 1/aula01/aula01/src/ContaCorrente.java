@@ -4,10 +4,10 @@ import java.util.List;
 public class ContaCorrente {
 
     private Integer numeroConta;
-    Integer numeroAgencia;
-    String nomeCliente;
-    Date data;
-    Double saldo;
+    private Integer numeroAgencia;
+    private String nomeCliente;
+    private Date data;
+    private Double saldo;
 
     public void setNumeroConta(Integer numeroConta) {
         if (this.numeroConta == null) {
@@ -16,6 +16,14 @@ public class ContaCorrente {
         } else {
             System.out.println("Sua conta não pode ser alterada");
         }
+    }
+
+    public void setNumeroAgencia(Integer numeroAgencia) {
+        this.numeroAgencia = numeroAgencia;
+    }
+
+    public void setNomeCliente(String nomeCliente) {
+        this.nomeCliente = nomeCliente;
     }
 
     public Integer getNumeroConta() {
