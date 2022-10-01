@@ -3,19 +3,33 @@ import java.util.List;
 
 public class ContaCorrente {
 
-    Integer numeroConta;
+    private Integer numeroConta;
     Integer numeroAgencia;
     String nomeCliente;
     Date data;
     Double saldo;
 
-    void sacar(Double valor) {
+    public void setNumeroConta(Integer numeroConta) {
+        if (this.numeroConta == null) {
+            this.numeroConta = numeroConta;
+
+        } else {
+            System.out.println("Sua conta não pode ser alterada");
+        }
+    }
+
+    public Integer getNumeroConta() {
+        return numeroConta;
     }
 
     void transferir(Double valor, ContaCorrente destino) {
     }
 
-    boolean cancelar(ContaCorrente conta, String justificativa) {
+    public void sacar(Double saldo) {
+        this.saldo -= saldo;
+    }
+
+    boolean cancelar(String justificativa) {
         return true;
     }
 
